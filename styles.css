@@ -1,0 +1,519 @@
+html,body{
+    height: 100%; /* Ensure the body takes the full height */
+    margin: 0; /* Remove default margins */
+}
+body {
+    /* font-family: Arial, sans-serif; */
+    margin: 0;
+    padding: 0;
+    /* background-color: #f4f4f4; */
+    background-color: #F8F9FA;
+    color: #333333;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+}
+.main-content {
+    flex: 1; /* Allow main content to grow and fill the space */
+}
+header {
+    background-color: #333;
+    color: white;
+    /* padding: 15px; */
+    padding: 20px 0; /* Padding for the header */
+    position: sticky; /* Sticky header */
+    top: 0; /* Stick it at the top */
+    width: 100%; /* Full width */
+    z-index: 100; /* Ensure it stays on top of other content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+header h1 {
+    font-size: 2em; /* Large font size */
+    text-align: center; /* Center the title */
+    margin: 0; /* Remove default margin */
+    font-weight: bold; /* Bold for emphasis */
+    letter-spacing: 2px; /* Spacing between letters */
+}
+nav {
+    text-align: center; /* Center the nav links */
+    margin-top: 10px; /* Space between title and links */
+}
+nav a {
+    /* color: white;
+    padding: 10px;
+    text-decoration: none; */
+    color: #27ae60;
+    /* padding: 10px; */
+    text-decoration: none;
+    margin: 0 15px; /* Spacing between links */
+    font-size: 1.1em; /* Slightly larger font size */
+    padding: 10px 15px; /* Padding around links */
+    border-radius: 5px; /* Rounded corners for modern look */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+nav a:hover {
+    /* color: #007BFF; */
+    background-color: #FF6F61; /* Change background on hover */
+    color: #fff; /* Keep text white */
+}
+nav a.active {
+    background-color: #FF6F61; /* Highlight current page */
+    color: #fff; /* Keep text white */
+}
+
+/* Responsive Design: Adjust for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5em; /* Smaller title font size for mobile */
+    }
+
+    nav a {
+        display: block; /* Stack links vertically on mobile */
+        margin: 10px 0; /* Space between stacked links */
+    }
+}
+h1, h2 {
+    color: #27ae60;
+}
+/* .index-page * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index-page body {
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+.index-page header {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+}
+
+.index-page header h1 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.index-page nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+.index-page nav a:hover, .index-page nav a.active {
+    color: #f39c12;
+} */
+
+.index-page #hero {
+    background: url('images/homebackground.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.index-page .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    text-align: center;
+    color: #fff;
+}
+
+.index-page .company-name {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.index-page .tagline {
+    font-size: 1.5em;
+    font-weight: 300;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.index-page .cursor {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: whitesmoke;
+    animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+.index-page .description {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    color: whitesmoke;
+}
+
+.index-page .button {
+    padding: 10px 20px;
+    background-color: #27ae60;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.index-page .button:hover {
+    background-color: #FF6F61;
+}
+
+/* .index-page #footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.index-page #footer h3, .index-page #footer p {
+    margin: 0;
+    padding: 5px;
+} */
+
+section {
+    padding: 20px;
+}
+.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+/* footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    
+} */
+/* General footer styles */
+/* Footer Styles */
+/* Footer container */
+/* Footer Styling */
+#footer {
+    background: #333;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+    color: white;
+  }
+  
+  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #0563bb;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+  #footer .social-links a:hover {
+    background: #0678e3;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+  #footer .credits {
+    font-size: 13px;
+  }
+
+.accent {
+    color: #32CD32;
+}
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f4f4f9; /* Soft background */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+}
+form h2{
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+form label{
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 10px;
+    display: block;
+}
+button{
+    /* background-color: #FF6F61;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px; */
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    background-color: #ff6f61; /* Accent color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #e65b54;
+}
+::placeholder {
+    color: #aaa;
+}
+input, select, textarea {
+    /* border: 1px solid #CCCCCC;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%; */
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+input:focus, select:focus {
+    border-color: #ff6f61; /* Focus effect with accent color */
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 111, 97, 0.5);
+}
+.bicycle-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Align items evenly */
+    margin: 20px 0;
+}
+
+.bicycle-item {
+    background-color: #fff; /* White background for each item */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin: 10px;
+    padding: 15px;
+    text-align: center; /* Center text */
+    width: 250px; /* Fixed width for each item */
+}
+
+.bicycle-image {
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+}
+.bicycle-item ul {
+    list-style-type: disc; /* Bulleted list */
+    padding-left: 20px; Indent the list
+    color: #555; /* Gray color for text */
+}
+
+.bicycle-item ul li {
+    margin: 5px 0; /* Space between list items */
+}
+
+h3 {
+    color: #FF6F61; /* Primary color for headers */
+    margin: 10px 0; /* Space around headers */
+}
+
+p {
+    color: #555; /* Gray color for descriptions */
+}
+.rent-button-container {
+    text-align: center; /* Center the button */
+    margin: 20px 0; /* Space above and below the button */
+}
+
+.rent-button {
+    background-color: #FF6F61; /* Button color */
+    color: white; /* Text color */
+    padding: 15px 30px; /* Padding for the button */
+    text-decoration: none; /* Remove underline from link */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 1.2em; /* Larger font size */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.rent-button:hover {
+    background-color: #FF5733; /* Darker shade on hover */
+}
+
+.about body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+}
+
+.about h2 {
+    color: #2c3e50;
+}
+
+.about h3 {
+    color: #27ae60;
+}
+
+.about table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+.about th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.about th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+.about .slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.about .slide {
+    width: 100%;
+    display: none; /* Hide images by default */
+    height: auto;
+}
+.about img {
+    width: 100%; /* Ensure images fill the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* This helps maintain the quality and fit of the image */
+}
+.about .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #2980b9;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.about .button:hover {
+    background-color: #3498db;
+}
+
+/* Slideshow buttons */
+.about .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+}
+
+.about .prev {
+    left: 10px;
+}
+
+.about .next {
+    right: 10px;
+}
+.available h2 {
+    font-size: 2.5em; /* Larger font size */
+    color: #FF6F61; /* Primary color */
+    text-align: center; /* Center the heading */
+    text-transform: uppercase; /* Make text uppercase */
+    margin-bottom: 20px; /* Space below the heading */
+    position: relative; /* For positioning the pseudo-element */
+    font-family: 'Montserrat', sans-serif; 
+}
+
+/* Adding a decorative element below the heading */
+.available h2::after {
+    content: ''; /* Empty content for the pseudo-element */
+    display: block; /* Make it a block element */
+    width: 80%; /* Width of the decorative line */
+    height: 4px; /* Height of the line */
+    background-color: #32CD32; /* Green color for the line */
+    margin: 10px auto; /* Center the line with automatic margins */
+    border-radius: 2px; /* Slightly rounded edges */
+}
+/* Styling for the form elements
+.radio-group, .checkbox-group {
+    margin-bottom: 1em;
+}
+
+.radio-group label, .checkbox-group label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2); /* Make the radio/checkbox larger */
+} */
+
+
