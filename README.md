@@ -52,4 +52,4 @@ In the future, Cycle Sawa aims to expand to more universities and eventually bro
 
 Below is a screenshot of the **Rent a Bicycle** form page showing the user interface:
 
-![Cycle Sawa - Rent a Bicycle Form](./Screenshot.png)
+![Cycle Sawa - Rent a Bicycle Form](<./Screenshot(1).png>)
